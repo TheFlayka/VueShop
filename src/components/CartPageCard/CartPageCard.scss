@@ -1,0 +1,107 @@
+.cart-content-cards-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  background-color: var(--background_window);
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 1200px;
+  &-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    img {
+      width: 250px;
+      height: 140px;
+      border-radius: 5px;
+      object-fit: cover;
+      @media (max-width: 800px) {
+        width: 130px;
+        height: 100px;
+      }
+      @media (max-width: 430px) {
+        width: 100px;
+        height: 80px;
+      }
+    }
+    h2 {
+      font-size: 32px;
+      max-width: 500px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      @media (max-width: 800px) {
+        font-size: 23px;
+      }
+      @media (max-width: 1428px) {
+        max-width: 350px;
+      }
+      @media (max-width: 950px) {
+        max-width: 300px;
+      }
+      @media (max-width: 880px) {
+        max-width: 200px;
+      }
+      @media (max-width: 800px) {
+        max-width: 250px;
+      }
+      @media (max-width: 600px) {
+        max-width: 150px;
+      }
+    }
+    .price {
+      font-size: 20px;
+      margin: 5px 0 10px;
+      @media (max-width: 800px) {
+        font-size: 16px;
+      }
+      @media (max-width: 500px) {
+        flex-direction: column;
+      }
+    }
+    p {
+      font-size: 20px;
+      @media (max-width: 800px) {
+        font-size: 16px;
+      }
+    }
+  }
+  &-count {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    button {
+      background-color: #ccc;
+      border-radius: 5px;
+      padding: 5px 30px;
+      font-size: 18px;
+      transition: 300ms;
+      &.minus {
+        background-color: var(--primary);
+        &:hover {
+          background-color:  var(--primary_hover);
+        }
+      }
+      &.plus {
+        background-color: var(--primary);
+        &:hover {
+          background-color: var(--primary_hover);
+        }
+      }
+      @media (max-width: 800px) {
+        font-size: 16px;
+        padding: 5px 20px;
+      }
+    }
+    @media (max-width: 700px) {
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 460px) {
+    gap: 30px;
+  }
+  @media (max-width: 420px) {
+    gap: 20px;
+  }
+}

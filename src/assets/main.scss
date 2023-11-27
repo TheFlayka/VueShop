@@ -1,0 +1,30 @@
+@import '/node_modules/ress/dist/ress.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+* {
+  font-family: 'Rubik', sans-serif;
+  color: var(--color);
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1920px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+  &::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--background_window);
+    border-radius: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 5px;
+    &:hover {
+      background-color: var(--primary_hover);
+    }
+  }
+}
