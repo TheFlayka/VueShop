@@ -1,7 +1,11 @@
 <template>
 	<div class="navbar-search">
 		<div class="navbar-search-input">
-			<img @click="searchText ? searchText = '' : ''" :src="searchText ? '/close.svg' : '/search.svg'" alt="" />
+			<img
+				@click="searchText ? (searchText = '') : ''"
+				:src="searchText ? '/close.svg' : '/search.svg'"
+				alt=""
+			/>
 			<input
 				type="text"
 				placeholder="Search products..."
@@ -20,7 +24,10 @@
 				<img :src="product.thumbnail" alt="" />
 				<div class="navbar-search-output-item-info">
 					<h2>{{ product.title }}</h2>
-					<Price :price="product.price" :discountPercentage="product.discountPercentage" />
+					<Price
+						:price="product.price"
+						:discountPercentage="product.discountPercentage"
+					/>
 				</div>
 			</RouterLink>
 			<div v-else>Продукты не найдены</div>

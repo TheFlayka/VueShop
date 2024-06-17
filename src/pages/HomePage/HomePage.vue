@@ -12,7 +12,7 @@
 							v-for="(name, idx) in categoriesName"
 							:key="idx"
 						>
-							{{ name }}
+							{{ name.name }}
 						</p>
 					</div>
 				</div>
@@ -65,13 +65,14 @@ async function getProductsCategory(name) {
 		skip.value = 0
 		page.value = 1
 		const res = await axios.get(
-			`https://dummyjson.com/products/category/${name}?limit=${limit}&skip=${skip.value}`
+			`https://dummyjson.com/products/category/${name.name}?limit=${limit}&skip=${skip.value}`
 		)
 		productsCategory.value = res.data.products
-		currentCategory.value = name
+		console.log(res);
+		currentCategory.value = name.name
 		active.value = false
 		sort()
-	} catch (error) {
+	} catch (error) { 	
 		console.error(`Ошибка при получений продуктов из категорий: ${error}`)
 	}
 }

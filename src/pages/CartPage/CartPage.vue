@@ -17,11 +17,11 @@
 				</h2>
 				<hr />
 				<p>Number of products: {{ cartProducts.length }}</p>
-				<p>Delivery: 10,00 $ (in Uzbekistan)</p>
+				<p>Delivery: 10,00 $ (on Mars)</p>
 				<hr />
 				<a
 					target="_blank"
-					href="https://www.youtube.com/watch?v=DCOonkQtoeQ&ab_channel=SuperKek"
+					href="https://www.youtube.com/watch?v=i13Riqmd1dk&ab_channel=%D0%92%D0%B5%D0%BB%D1%8C%D0%BC%D0%B8"
 					>Buy</a
 				>
 			</div>

@@ -43,7 +43,7 @@ const { cartProducts, favouriteProducts } = storeToRefs(useStorageStore())
 onMounted(() => {
 	if (
 		JSON.parse(localStorage.getItem('cart')) ||
-		JSON.parse(localStorage.getItem('cart'))
+		JSON.parse(localStorage.getItem('cart')) 
 	) {
 		cart.value =
 			cartProducts.value.find(product => product.id === props.product.id) || false
